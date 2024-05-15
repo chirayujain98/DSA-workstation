@@ -1,0 +1,5 @@
+https://www.geeksforgeeks.org/the-earliest-moment-when-everyone-become-friends/
+
+Given a group of N people, each having a unique ID value from 0 to (N – 1) and an array arr[] of M elements of the form {U, V, time} representing that the person U will become acquainted with person V at the given time.
+Let’s say that person U is acquainted with person V if U is friends with V, or U is a friend of someone acquainted with V.
+The task is to find the earliest time at which every person became acquainted with each other.

@@ -1,0 +1,21 @@
+Variation of coin change.
+we are given dp array that we created while finding number of ways to make the target sum. We need to find the coins array, using which this dp array is created.
+Example:
+
+target = 10
+number of ways to make 10: 3
+Input: [1, 0, 1, 0, 1, 1, 2, 1, 2, 1, 3]
+Output: [2, 5, 6]
+
+
+// Solution
+
+dp[0] = 1 means there is 1 way to make the sum 0, which is by using no coins
+dp[1]= 0 means there is 0 way to make the sum 1
+dp[2] = 1 means there is 1 way to make the sum 2 which is by using 2's coin
+dp[3] = 0 means there is 0 way to make the sum 3, means we can do with (2+1) but above we not selected 1's coin so no any option to make sum
+dp[4] = 1 means there is 1 way to make the sum 4 , means we can do with (2+2) as (3+1) is not valid so.
+.
+.
+.
+dp[10] = 3 means there us 3 way to make the sum 10, which are (2+2+6) (2+2+2+2+2) (5+5)
